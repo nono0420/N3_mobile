@@ -69,7 +69,34 @@
         display: none;
         align-items: center;
         justify-content: center;
-        width: 30vw;
+        width: 60px;
+        height: 70%;
+        @include operateBtn;
+        border-radius: 30px;
+        padding: 0 0 1px 3px;
+        margin-right: 3vw;
+
+        &.display {
+            display: flex;
+        }
+
+        // .login_ic {
+        //     width: 25px;
+        //     height: 25px;
+        //     margin-right: 10px;
+        // }
+
+        span {
+            font-size: 15px;
+            font-weight: bold;
+        }
+    }
+    //註冊按鈕
+    .registerBtn {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
         height: 70%;
         @include operateBtn;
         border-radius: 30px;
@@ -179,7 +206,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 9%;
+            padding: 0 5%;
             box-sizing: border-box;
 
             button {
@@ -188,7 +215,7 @@
                 @include operateBtn;
 
                 &.vipBtn {
-                    display: none;
+                    // display: none;
                     font-size: 15px;
                 }
             }
@@ -321,9 +348,8 @@
 
             p {
                 position: absolute;
-                width: 100%;
-                bottom: -6vw;
-                left: 0;
+                bottom: 5vw;
+                left: 25px;
                 @include gameBoxWord;
             }
         }

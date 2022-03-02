@@ -84,8 +84,8 @@
                     justify-content: flex-end;
 
                     button {
-                        width: 95px;
-                        height: 27px;
+                        width: 82px;
+                        min-height: 21px;
                         @include checkEvent;
                     }
                 }

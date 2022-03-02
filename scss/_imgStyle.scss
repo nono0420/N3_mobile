@@ -9,6 +9,12 @@
     background: url('../images/icon/marqueeIC.png') no-repeat center;
     background-size: 100%;
 }
+//查詢紅利按鈕
+header .inviteimg {
+    background: url('../images/icon/invite.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 
 //login_ic
 // .loginBtn .login_ic {
@@ -119,7 +125,7 @@ header .content {
 
 //event .all_ic
 .eventType .all_ic {
-    background: url('../images/icon/svg/entire.svg') no-repeat;
+    background: url('../images/icon/svg/entire2.svg') no-repeat;
     background-size: 100%;
 }
 .eventType li.active .all_ic {

@@ -1,6 +1,6 @@
 //主色系
 $mainBG_1: #ffffff;
-$mainBG_2: #f2f3f3;
+$mainBG_2: #f8f8f8;
 
 //主要字色
 $mainWord_1: #000000;
@@ -24,7 +24,7 @@ $remind_Sp: #009245;
 $optionColor: #4d4d4d;
 
 //標題字
-$title_1: #9c8018;
+$title_1: #c0933e;
 $title_2: #4d4d4d;
 $title_3: #b3b3b3;
 $title_Time: #848484;
@@ -32,7 +32,7 @@ $title_Header: #ffffff;
 
 //選擇列字色+選擇列active
 $choose_Word: #848484;
-$choose_ActiveWord: #c7a16e;
+$choose_ActiveWord: #231815;
 $choose_Border: #c7a16e;
 
 //陰影色
@@ -138,10 +138,11 @@ $gameListBtn_ActiveBG: linear-gradient(to top,#e9cc93 0%,#be9c5b 100%);
     border-radius: 5px;
 }
 @mixin gameBoxWord {
-    color: #8e5610;
+    color: #ebd495;
     font-size: 5vw;
     font-weight: bold;
     text-align: center;
+    text-shadow: 2px 3px 3px #332116, 2px -2px 3px #332116;
 }
 
 //member

@@ -167,6 +167,7 @@ $(function(){
 $(function(){
     $('.realLogin').click(function(){
         $('.jumpWindow,.loginBtn').removeClass('display');
+        $('.jumpWindow,.registerBtn').removeClass('display');
         $('.filter,.news,.alLogin').addClass('display');
         $('.operate').addClass("login");
         

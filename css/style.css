@@ -18,6 +18,12 @@ button:disabled {
   background-size: 100%;
 }
 
+header .inviteimg {
+  background: url("../images/icon/invite.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 .filter .title {
   background: url("../images/loginTop.jpg") no-repeat top center;
   background-size: cover;
@@ -120,7 +126,7 @@ header .content {
 }
 
 .eventType .all_ic {
-  background: url("../images/icon/svg/entire.svg") no-repeat;
+  background: url("../images/icon/svg/entire2.svg") no-repeat;
   background-size: 100%;
 }
 
@@ -560,6 +566,15 @@ html body header .content {
   position: relative;
   overflow: hidden;
 }
+html body header .content .invite {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+html body header .content .invite .inviteimg {
+  width: 90px;
+  height: 40px;
+}
 html body header .content .title {
   width: 70%;
   height: auto;
@@ -801,7 +816,7 @@ html body .memberArea .loginBtn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 30vw;
+  width: 60px;
   height: 70%;
   background: -webkit-gradient(linear, left bottom, left top, from(#943c06), to(#ffd1af));
   background: linear-gradient(to top, #943c06 0%, #ffd1af 100%);
@@ -824,6 +839,40 @@ html body .memberArea .loginBtn.display {
   display: flex;
 }
 html body .memberArea .loginBtn span {
+  font-size: 15px;
+  font-weight: bold;
+}
+html body .memberArea .registerBtn {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60px;
+  height: 70%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#943c06), to(#ffd1af));
+  background: linear-gradient(to top, #943c06 0%, #ffd1af 100%);
+  -webkit-box-shadow: inset 0 2px 1px 0 #d3a047, inset 0 -2px 0 0 #dfb988, inset -2px -1px 0 0 #ffecbd, 0 -2px 0 0 #ffebba, 0 1px 0 0 #d3a047, 2px 2px 2px 0 #bbbbbb;
+          box-shadow: inset 0 2px 1px 0 #d3a047, inset 0 -2px 0 0 #dfb988, inset -2px -1px 0 0 #ffecbd, 0 -2px 0 0 #ffebba, 0 1px 0 0 #d3a047, 2px 2px 2px 0 #bbbbbb;
+  color: #ffffff;
+  padding: 0 1px 3px 0;
+  font-size: 21px;
+  border-radius: 50%;
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 30px;
+  padding: 0 0 1px 3px;
+  margin-right: 3vw;
+}
+html body .memberArea .registerBtn.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .memberArea .registerBtn span {
   font-size: 15px;
   font-weight: bold;
 }
@@ -933,7 +982,7 @@ html body .memberArea .operate .btnBox {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 9%;
+  padding: 0 5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -953,7 +1002,6 @@ html body .memberArea .operate .btnBox button {
           box-sizing: border-box;
 }
 html body .memberArea .operate .btnBox button.vipBtn {
-  display: none;
   font-size: 15px;
 }
 html body .homeCenter {
@@ -1088,13 +1136,13 @@ html body .homeCenter .gameBox li:nth-of-type(2n) {
 }
 html body .homeCenter .gameBox li p {
   position: absolute;
-  width: 100%;
-  bottom: -6vw;
-  left: 0;
-  color: #8e5610;
+  bottom: 5vw;
+  left: 25px;
+  color: #ebd495;
   font-size: 5vw;
   font-weight: bold;
   text-align: center;
+  text-shadow: 2px 3px 3px #332116, 2px -2px 3px #332116;
 }
 html body footer {
   width: 100%;
@@ -1704,7 +1752,7 @@ html body .filter .ruleWindow .content .ruleBody h2 {
   padding: 10px 5px;
   font-weight: bold;
   line-height: 1.8;
-  color: #9c8018;
+  color: #c0933e;
 }
 html body .filter .ruleWindow .content .ruleBody p {
   font-size: 3.4vw;
@@ -2555,7 +2603,7 @@ html body .filter .pointWindow .content ul li {
   font-size: 14px;
   font-weight: bold;
   color: #000000;
-  background: #f2f3f3;
+  background: #f8f8f8;
   border-bottom: solid 1px #957222;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2673,7 +2721,7 @@ html body .slotWrap .slotHeader .listBox ul li {
   border-bottom: solid 2px transparent;
 }
 html body .slotWrap .slotHeader .listBox ul li.active {
-  color: #c7a16e;
+  color: #231815;
   border-color: #c7a16e;
 }
 html body .slotWrap .slotHeader .listBox ul li i {
@@ -2861,7 +2909,7 @@ html body .eventType ul li:active, html body .eventType ul li.active {
   border-color: #c7a16e;
 }
 html body .eventType ul li:active span, html body .eventType ul li.active span {
-  color: #c7a16e;
+  color: #231815;
 }
 html body .eventType ul li .all_ic {
   width: 25px;
@@ -2880,7 +2928,7 @@ html body .eventList {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px 14px 0;
-  background: #f2f3f3;
+  background: #f8f8f8;
 }
 html body .eventList ul {
   display: -webkit-box;
@@ -2903,7 +2951,7 @@ html body .eventList ul li .eventBox {
   border: solid 1px #957222;
 }
 html body .eventList ul li .eventBox .eventImg {
-  background: #f2f3f3;
+  background: #f8f8f8;
   margin: 6px auto 10px;
   border-radius: 5px;
   overflow: hidden;
@@ -2925,8 +2973,8 @@ html body .eventList ul li .eventBox p {
           justify-content: flex-end;
 }
 html body .eventList ul li .eventBox p button {
-  width: 95px;
-  height: 27px;
+  width: 82px;
+  min-height: 21px;
   background: -webkit-gradient(linear, left bottom, left top, from(#f3dba7), color-stop(50%, #a88754), to(#f0d8a4));
   background: linear-gradient(to top, #f3dba7 0%, #a88754 50%, #f0d8a4 100%);
   border: solid 1px #957222;
@@ -2953,7 +3001,7 @@ html body .eventDetail {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 15px;
-  background: #f2f3f3;
+  background: #f8f8f8;
   overflow-y: auto;
 }
 html body .eventDetail .eventImg {
@@ -2988,7 +3036,7 @@ html body .eventDetail .detailContent ul .title {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #9c8018;
+  color: #c0933e;
 }
 html body .eventDetail .detailContent ul ul {
   list-style: disc;
@@ -3037,7 +3085,7 @@ html body .walletWrap {
   width: 100%;
   min-height: calc(100vh - 92px);
   height: auto;
-  background: #f2f3f3;
+  background: #f8f8f8;
   padding-bottom: 10px;
 }
 html body .walletWrap .walletBox {
@@ -3085,7 +3133,7 @@ html body .walletWrap .walletBox .gradient .content .amount .half .title {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 10px;
-  color: #9c8018;
+  color: #c0933e;
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -3434,7 +3482,7 @@ html body .memberWrap {
   width: 100%;
   height: auto;
   min-height: calc(100% - 92px);
-  background: #f2f3f3;
+  background: #f8f8f8;
   padding-bottom: 10px;
 }
 html body .memberWrap .user {
@@ -3618,7 +3666,7 @@ html body .memberWrap .user .btnBox button .text {
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #9c8018;
+  color: #c0933e;
 }
 html body .memberWrap .user .btnBox button .text p {
   font-size: 12px;
@@ -3817,7 +3865,7 @@ html body .memberList ul li {
   color: #848484;
 }
 html body .memberList ul li:active, html body .memberList ul li.active {
-  color: #c7a16e;
+  color: #231815;
   border-color: #c7a16e;
 }
 html body .memberInfo {
@@ -3827,7 +3875,7 @@ html body .memberInfo {
   padding: 10px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #f2f3f3;
+  background: #f8f8f8;
 }
 html body .memberInfo form {
   width: 100%;
@@ -4094,7 +4142,7 @@ html body .memberPlatform {
   padding: 10px 4vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #f2f3f3;
+  background: #f8f8f8;
 }
 html body .memberPlatform .platformBox {
   width: 100%;
@@ -4113,7 +4161,7 @@ html body .memberPlatform .platformBox .title {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 17px;
-  color: #9c8018;
+  color: #c0933e;
   font-size: 14px;
   font-weight: bold;
   display: -webkit-box;
@@ -4171,7 +4219,7 @@ html body .helpWrap {
   display: none;
   width: 100%;
   height: auto;
-  background: #f2f3f3;
+  background: #f8f8f8;
 }
 html body .helpWrap.display {
   display: block;
@@ -4210,7 +4258,7 @@ html body .helpWrap .helpHeader .selectBox {
   border: solid 1px #957222;
 }
 html body .helpWrap .helpHeader .selectBox p {
-  color: #9c8018;
+  color: #c0933e;
   font-size: 14px;
   font-weight: bold;
 }
@@ -4344,7 +4392,7 @@ html body .helpInner ul li .title p {
   width: 100%;
   font-size: 14px;
   font-weight: bold;
-  color: #9c8018;
+  color: #c0933e;
 }
 html body .helpInner ul li .textBox {
   display: none;
@@ -4515,13 +4563,13 @@ html body .eventApplyType ul li {
 }
 html body .eventApplyType ul li:active, html body .eventApplyType ul li.active {
   border-color: #c7a16e;
-  color: #c7a16e;
+  color: #231815;
 }
 html body .applyList {
   display: none;
   width: 100%;
   height: calc(100vh - 132px);
-  background: #f2f3f3;
+  background: #f8f8f8;
   overflow-y: scroll;
   margin-top: 40px;
 }
@@ -4556,7 +4604,7 @@ html body .applyList .listBox .list .title {
       -ms-flex-pack: center;
           justify-content: center;
   border-bottom: solid 1px #cccccc;
-  color: #9c8018;
+  color: #c0933e;
   font-size: 16px;
   font-weight: bold;
 }
@@ -4686,7 +4734,7 @@ html body .applyList .listBox .list .btnBox button.checkBtn {
 html body .applyRecord {
   width: 100%;
   height: calc(100vh - 132px);
-  background: #f2f3f3;
+  background: #f8f8f8;
   overflow-y: auto;
   margin-top: 40px;
   -webkit-box-sizing: border-box;
@@ -4887,7 +4935,7 @@ html body .applyRecord .reviewBody .recordBox ul .title {
   border-bottom: solid 1px #cccccc;
 }
 html body .applyRecord .reviewBody .recordBox ul .title p {
-  color: #9c8018;
+  color: #c0933e;
   font-weight: bold;
   font-size: 14px;
 }
@@ -4931,7 +4979,7 @@ html body .vipWrap {
   width: 100%;
   height: calc(100vh - 94px);
   overflow-y: auto;
-  background: #f2f3f3;
+  background: #f8f8f8;
 }
 html body .vipWrap .topBox {
   width: 100%;
@@ -4963,7 +5011,7 @@ html body .vipWrap .topBox .board .content .account {
   margin-bottom: 12px;
   letter-spacing: 2px;
   font-weight: bold;
-  color: #9c8018;
+  color: #c0933e;
 }
 html body .vipWrap .topBox .board .content .textBox {
   margin-bottom: 12px;
@@ -5005,7 +5053,7 @@ html body .vipWrap .topBox .board .exBar .level p {
   color: #4d4d4d;
 }
 html body .vipWrap .topBox .board .exBar .level p.cur {
-  color: #9c8018;
+  color: #c0933e;
 }
 html body .vipWrap .topBox .board .exBar .bar {
   width: 100%;
@@ -5183,7 +5231,7 @@ html body .vipWrap .enjoyBox .title {
   font-size: 17px;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #9c8018;
+  color: #c0933e;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-left: 1vw;
@@ -5296,7 +5344,7 @@ html body .vipDetail .lvWrap:last-child {
 html body .vipDetail .lvWrap .title {
   font-size: 17px;
   font-weight: bold;
-  color: #9c8018;
+  color: #c0933e;
   margin: 7px 0 12px;
 }
 html body .vipDetail .lvWrap .list {
@@ -5585,7 +5633,7 @@ html body .topList ul li {
   color: #848484;
 }
 html body .topList ul li.active {
-  color: #c7a16e;
+  color: #231815;
   border-color: #c7a16e;
 }
 html body .mailBody.normal {
@@ -5600,7 +5648,7 @@ html body .mailBody.normal .subClass {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px 15px;
-  background: #f2f3f3;
+  background: #f8f8f8;
 }
 html body .mailBody.normal .subClass ul {
   width: 100%;
@@ -5876,7 +5924,7 @@ html body .mailBody.post .subClass {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px 15px;
-  background: #f2f3f3;
+  background: #f8f8f8;
 }
 html body .mailBody.post .subClass ul {
   width: 100%;
@@ -6010,7 +6058,7 @@ html body .cardList {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px 0;
-  background: #f2f3f3;
+  background: #f8f8f8;
 }
 html body .cardList .cardBox {
   width: 100%;
@@ -6191,7 +6239,7 @@ html body .cardContent ul button:active, html body .cardContent ul button.active
 html body .bettingWrap {
   width: 100%;
   height: calc(100vh - 95px);
-  background: #f2f3f3;
+  background: #f8f8f8;
   overflow-y: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -6406,7 +6454,7 @@ html body .bettingWrap .list .recordBox .title {
   width: 100%;
   height: 38px;
   border-bottom: solid 1px #cccccc;
-  color: #9c8018;
+  color: #c0933e;
   font-size: 14px;
   font-weight: bold;
   display: -webkit-box;
@@ -6507,7 +6555,7 @@ html body .recordTop ul li {
   color: #848484;
 }
 html body .recordTop ul li.active {
-  color: #c7a16e;
+  color: #231815;
   border-color: #c7a16e;
 }
 html body .waterBox {
@@ -6563,7 +6611,7 @@ html body .waterBox ul li p {
   font-size: 14px;
 }
 html body .waterBox ul li p.title {
-  color: #9c8018;
+  color: #c0933e;
   border-bottom: solid 1px #cccccc;
 }
 html body .waterBox ul li p span {
@@ -6657,7 +6705,7 @@ html body .waterBox ul li .btnBox button:last-child:active, html body .waterBox 
 html body .depositWrap {
   width: 100%;
   height: calc(100vh - 125px);
-  background: #f2f3f3;
+  background: #f8f8f8;
   overflow-y: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -6856,7 +6904,7 @@ html body .depositWrap .depContent .check:active, html body .depositWrap .depCon
   color: #ffffff;
 }
 html body .depositWrap .depContent.already .title {
-  color: #9c8018;
+  color: #c0933e;
 }
 html body .depositWrap .depContent.already ul {
   width: 100%;
@@ -6990,7 +7038,7 @@ html body .depositWrap .remindBox p.title {
   margin-bottom: 10px;
   font-size: 14px;
   letter-spacing: 1px;
-  color: #9c8018;
+  color: #c0933e;
 }
 html body .depositWrap .remindBox p .sp {
   color: #e11515;
@@ -6999,7 +7047,7 @@ html body .transWrap {
   width: 100%;
   height: calc(100vh - 95px);
   overflow-y: auto;
-  background: #f2f3f3;
+  background: #f8f8f8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px 0;
@@ -7044,7 +7092,7 @@ html body .transWrap .wallet .helf .title {
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: bold;
-  color: #9c8018;
+  color: #c0933e;
 }
 html body .transWrap .wallet .helf .title i {
   width: 4.27vw;
@@ -7110,7 +7158,7 @@ html body .transWrap .transBox .selectBox select {
   font-size: 14px;
 }
 html body .transWrap .transBox .selectBox .smallWord {
-  color: #9c8018;
+  color: #c0933e;
   font-size: 12px;
   font-weight: bold;
   position: absolute;
@@ -7335,7 +7383,7 @@ html body .withWrap {
   width: 100%;
   min-height: calc(100vh - 92px);
   height: auto;
-  background: #f2f3f3;
+  background: #f8f8f8;
   padding-bottom: 10px;
 }
 html body .withWrap .walletBox {
@@ -7373,7 +7421,7 @@ html body .withWrap .walletBox .gradient .content {
   border: solid 1px #957222;
 }
 html body .withWrap .walletBox .gradient .content .title {
-  color: #9c8018;
+  color: #c0933e;
   font-size: 14px;
   font-weight: bold;
   display: -webkit-box;
@@ -7750,7 +7798,7 @@ html body .withWrap .remindBox p.title {
   margin-bottom: 10px;
   font-size: 14px;
   letter-spacing: 1px;
-  color: #9c8018;
+  color: #c0933e;
 }
 html body .withWrap .remindBox p .sp {
   color: #e11515;
