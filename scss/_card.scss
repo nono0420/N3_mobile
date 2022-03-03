@@ -118,7 +118,7 @@
 
             .title {
                 margin: 15px 0 6px;
-                font-size: 15px;
+                font-size: 14px;
                 color: $title_2;
                 font-weight: bold;
             }
@@ -136,6 +136,18 @@
                 font-size: 12px;
                 font-weight: bold;
                 color: $remind;
+            }
+
+            span {
+                font-size: 12px;
+                color: $remind;
+                padding-left: 8px;
+            }
+
+            p {
+                font-size: 14px;
+                color: $click;
+                margin: 10px 0 10px 0;
             }
         }
 
