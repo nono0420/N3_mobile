@@ -75,7 +75,7 @@
             p {
                 width: 64.53vw;
                 height: 8.27vw;
-                @include memberWallet
+                @include memberWallet;
             }
 
             button {

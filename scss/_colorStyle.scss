@@ -7,7 +7,7 @@ $mainWord_1: #000000;
 
 //主要邊框色
 $mainBorder_1: #cccccc;
-$mainBorder_2: #957222;
+$mainBorder_2: #b18e56;
 
 //金額色
 $money: #000000;
@@ -25,9 +25,9 @@ $optionColor: #4d4d4d;
 
 //標題字
 $title_1: #c0933e;
-$title_2: #4d4d4d;
-$title_3: #b3b3b3;
-$title_Time: #848484;
+$title_2: #000;
+$title_3: #666;
+$title_Time: #999;
 $title_Header: #ffffff;
 
 //選擇列字色+選擇列active
@@ -51,9 +51,9 @@ $filter: #00000066;
 
 //提示框
 @mixin remindBox {
-    background: #ffffff;
-    border: solid 1px #957222;
-    border-radius: 5px;
+    background: #fcf9f3;
+    border: 1px solid #ece0d2;
+    border-radius: 3px;
     padding: 14px 15px;
     box-sizing: border-box;
 }
@@ -148,7 +148,7 @@ $gameListBtn_ActiveBG: linear-gradient(to top,#e9cc93 0%,#be9c5b 100%);
 //member
 @mixin memberWallet {
     background: #f2f3f3;
-    color: #4d4d4d;
+    color: #000;
     border-color: #957222;
     display: flex;
     align-items: center;
@@ -664,7 +664,7 @@ button:disabled {
 
 @mixin mainSelect {
     background-color: #ffffff;
-    border-radius: 5px;
+    border-radius: 3px;
     appearance: none;
     font-size: 15px;
     font-weight: bold;
