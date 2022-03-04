@@ -25,7 +25,7 @@ $optionColor: #4d4d4d;
 
 //標題字
 $title_1: #c0933e;
-$title_2: #000;
+$title_2: #444;
 $title_3: #666;
 $title_Time: #999;
 $title_Header: #ffffff;
@@ -231,6 +231,10 @@ $cardWord: #ffffff;
     text-align: center;
     border-radius: 0 0 5px 5px;
 }
+
+//綁定銀行卡特殊字色
+$card_upload:#3d4cce;
+$card_line:#3502ff;
 
 //mail
 $mailCnt_TopBG: #e0c38d;
